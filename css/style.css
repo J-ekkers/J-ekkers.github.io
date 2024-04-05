@@ -27,6 +27,11 @@ margin: 0;
     justify-content: center;
 }
 
+.nav:hover{
+    background-color: orange;
+    color: bisque;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -61,3 +66,13 @@ a{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }   
+
+.homeinfo{
+    margin-top: 150px;
+}
+
+.meinfo{
+    font-size: larger;
+    width: 500px;
+    margin-top: 20px;
+}
