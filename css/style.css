@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+.header{
+    background-color: black;
+    height: 50px;
+}
+
+.homeimage{
+    height: 50px;
+}
+
+.nav{
+    display: flex;
+    margin-left: 30px;
+    background-color: bisque;
+    border: solid 1px orange;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    align-items: center;
+    color: orange;
+    align-self: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.homebutton{
+    width: 50px;
+}
+
+.am{
+    display: flex;
+    justify-content: center;
+}
+
+.ikfoto{
+    height: 505px;
+}
+
+.iktekst{
+    border-top: solid orange 2px;
+     font-size: larger;
+    display: flex;
+    justify-content: center;
+    color: orange;
+    width: 314.14px;
+ }
+
+ .ik {
+    border: solid orange 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}   
