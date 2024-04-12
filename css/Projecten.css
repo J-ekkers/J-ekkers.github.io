@@ -6,39 +6,38 @@ margin: 0;
 
 .header{
     background-color: black;
-    height: 50px;
+}
+ 
+.navbar{
+    background-color: black;
+    padding: 0px;
+    font-size: 25px;
+   
 }
 
-.homeimage{
-    height: 50px;
+.nav-lin{
+   color: black;
+   text-decoration: none;
 }
+ 
+.end{
+display: flex;
+justify-content: end;
+}
+ 
 
-.nav{
-    display: flex;
-    margin-left: 30px;
-    background-color: bisque;
-    border: solid 1px orange;
-    border-radius: 5px;
-    height: 30px;
-    width: 100px;
-    align-items: center;
+.nav-link{
     color: orange;
-    align-self: center;
-    justify-content: center;
+    background-color: bisque;
+    border-radius: 5px;
+    border: 1px solid orange;
 }
 
-.nav:hover{
-    background-color: orange;
+.nav-link:hover {
     color: bisque;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.homebutton{
-    width: 50px;
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid bisque;
 }
 
 .card-img-top{
