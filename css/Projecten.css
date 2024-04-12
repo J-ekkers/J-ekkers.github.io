@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+.header{
+    background-color: black;
+    height: 50px;
+}
+
+.homeimage{
+    height: 50px;
+}
+
+.nav{
+    display: flex;
+    margin-left: 30px;
+    background-color: bisque;
+    border: solid 1px orange;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    align-items: center;
+    color: orange;
+    align-self: center;
+    justify-content: center;
+}
+
+.nav:hover{
+    background-color: orange;
+    color: bisque;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.homebutton{
+    width: 50px;
+}
+
+.card-img-top{
+border: solid 2px black;
+border-radius: 5px;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.empty{
+height: 100px;
+}
+
+.card{
+margin-right: 30px;
+}
