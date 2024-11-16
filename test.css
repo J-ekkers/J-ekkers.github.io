@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.letter{
+    display: inline-block;
+    font-family: sans;
+    font-weight: bold;
+    letter-spacing: -5px;
+    animation: peek 1s both 1s;
+    animation-delay: var(--d);
+}
+
+@keyframes peek {
+    25% {
+        transform: rotateX(30deg)
+        translateY(10px) rotate
+        (-13deg);
+    }
+
+    50%{
+        transform: translateY(-22px)
+        rotate(3deg) scale(1.1);
+    }
+}
