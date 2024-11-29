@@ -75,15 +75,15 @@ img:hover{
     --grid-cols: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
 }
 
-.row1, .row2, .row3:has(>img:nth-child(1):hover) {
-    --grid-rows: var(--size-hover) var(--size-not-hover) var(--size-hover);
+:is(.row1, .row2, .row3):has(>img:nth-child(3):hover) {
+    --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
 }
 
-.row1, .row2, .row3:has(>img:nth-child(2):hover) {
+:is(.row1, .row2, .row3):has(>img:nth-child(2):hover) {
     --grid-rows: var(--size-not-hover) var(--size-hover) var(--size-not-hover);
 }
 
-.row1, .row2, .row3:has(>img:nth-child(3):hover) {
+:is(.row1, .row2, .row3):has(>img:nth-child(3):hover) {
     --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
 }
 
