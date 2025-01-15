@@ -27,66 +27,66 @@
     font-family: sans;
 }
 
-.gallery {
-    --size: 250px;
-    --gap: .1rem;
-    --grid-cols: var(--size) var(--size) var(--size);
-    --grid-rows: var(--size) var(--size) var(--size);
-    --size-hover: calc(var(--size) * 2);
-    --size-not-hover: calc(var(--size) / 2);
-   --speed: 500ms;
-   width: 100%;   
-   display: grid;
-   grid-template-columns: var(--grid-cols);
-   transition: var(--speed) ease-in-out;
-   gap: var(--gap);
-   background-color: black;
-}
-
-.row1, .row2, .row3 {
-    height: fit-content;
+    .gallery {
+        --size: 250px;
+        --gap: .1rem;
+        --grid-cols: var(--size) var(--size) var(--size);
+        --grid-rows: var(--size) var(--size) var(--size);
+        --size-hover: calc(var(--size) * 2);
+        --size-not-hover: calc(var(--size) / 2);
+    --speed: 500ms;
+    width: 100%;   
     display: grid;
-    grid-template-rows: var(--grid-rows);
-    gap: var(--gap);
+    grid-template-columns: var(--grid-cols);
     transition: var(--speed) ease-in-out;
-}
+    gap: var(--gap);
+    background-color: black;
+    }
 
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(35%);
-    transition: filter var(--speed);
-}
+    .row1, .row2, .row3 {
+        height: fit-content;
+        display: grid;
+        grid-template-rows: var(--grid-rows);
+        gap: var(--gap);
+        transition: var(--speed) ease-in-out;
+    }
 
-img:hover{
-    filter: brightness(90%);
-}
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(35%);
+        transition: filter var(--speed);
+    }
 
-.gallery:has(.row1:hover) {
-    --grid-cols: var(--size-hover) var(--size-not-hover) var(--size-not-hover);
-}
+    :is(.img, img):hover{
+        filter: brightness(90%);
+    }
 
-.gallery:has(.row2:hover) {
-    --grid-cols: var(--size-not-hover) var(--size-hover) var(--size-not-hover)
-}
+    .gallery:has(.row1:hover) {
+        --grid-cols: var(--size-hover) var(--size-not-hover) var(--size-not-hover);
+    }
 
-.gallery:has(.row3:hover) {
-    --grid-cols: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
-}
+    .gallery:has(.row2:hover) {
+        --grid-cols: var(--size-not-hover) var(--size-hover) var(--size-not-hover)
+    }
 
-:is(.row1, .row2, .row3):has(>img:nth-child(3):hover) {
-    --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
-}
+    .gallery:has(.row3:hover) {
+        --grid-cols: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+    }
 
-:is(.row1, .row2, .row3):has(>img:nth-child(2):hover) {
-    --grid-rows: var(--size-not-hover) var(--size-hover) var(--size-not-hover);
-}
+    :is(.row1, .row2, .row3):has(.img:hover) {
+        --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+    }
 
-:is(.row1, .row2, .row3):has(>img:nth-child(3):hover) {
-    --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
-}
+    :is(.row1, .row2, .row3):has(.img:hover) {
+        --grid-rows: var(--size-not-hover) var(--size-hover) var(--size-not-hover);
+    }
 
-img {
-    width: 100%;
-}
+    :is(.row1, .row2, .row3):has(.img:hover) {
+        --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+    }
+
+    img {
+        width: 100%;
+    }
