@@ -77,43 +77,101 @@
     </div>
 
 
-
-    <section class="gallery">
-        <div class="row1">
-            <div class="dashboard img">
-                <img src="projectImg/dashboard.PNG" alt="">
+    <div class="container mt-5">
+        <div class="row project-grid">
+            <div class="col-md-4 col-6 mb-4 project-item">
+                <div class="position-relative">
+                    <a href="#" target="_blank">
+                        <img src="projectImg/dashboard.PNG" class="img-fluid rounded" alt="Project 1" style="max-height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex flex-column justify-content-center align-items-center rounded overlay">
+                            <h5 class="text-white">Dashboard</h5>
+                            <p class="text-white text-center small px-2">Een dashboard waar je verschillende statistieken kunt volgen</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="escapeRoom img">
-                <img src="projectImg/Geselecteerdefoto(1).jpg" alt="">
+           
+           
+            <div class="col-md-4 col-6 mb-4 project-item">
+                <div class="position-relative">
+                    <a href="https://j-ekkers.github.io/portfolio-projecten/sd23-p04-html-bootstrap-mockup-b1j-J-ekkers-main/index.html" target="_blank">
+                        <img src="projectImg/mockup.PNG" class="img-fluid rounded" alt="Project 4" style="max-height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex flex-column justify-content-center align-items-center rounded overlay">
+                            <h5 class="text-white">UI Mockup</h5>
+                            <p class="text-white text-center small px-2">Een mockup voor een website met gebruik van bootstrap</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="TicTacToe img">
-                <img src="projectImg/Knipsel2.PNG" alt="">
+            <div class="col-md-4 col-6 mb-4 project-item">
+                <div class="position-relative">
+                    <a href="#" target="_blank">
+                        <img src="projectImg/OogaBoogaJumper.png" class="img-fluid rounded" alt="Project 5" style="max-height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex flex-column justify-content-center align-items-center rounded overlay">
+                            <h5 class="text-white">Ooga Booga Jumper</h5>
+                            <p class="text-white text-center small px-2">Een platformer gemaakt met phaser</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 mb-4 project-item">
+                <div class="position-relative">
+                    <a href="https://github.com/J-ekkers/portfolio-projecten.git" target="_blank">
+                        <img src="projectImg/webcatalogus.PNG" class="img-fluid rounded" alt="Project 6" style="max-height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex flex-column justify-content-center align-items-center rounded overlay">
+                            <h5 class="text-white">Web Catalogus</h5>
+                            <p class="text-white text-center small px-2">Webshop gemaakt met symfony</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-6 mb-4 project-item">
+                <div class="position-relative">
+                    <a href="#" target="_blank">
+                        <img src="projectImg/placeholder-256x256.png" class="img-fluid rounded" alt="Project 8" style="max-height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex flex-column justify-content-center align-items-center rounded overlay">
+                            <h5 class="text-white">Future Project</h5>
+                            <p class="text-white text-center small px-2">Exciting new project coming soon</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 mb-4 project-item">
+                <div class="position-relative">
+                    <a href="#" target="_blank">
+                        <img src="projectImg/placeholder-256x256.png" class="img-fluid rounded" alt="Project 9" style="max-height: 200px; object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex flex-column justify-content-center align-items-center rounded overlay">
+                            <h5 class="text-white">Coming Soon</h5>
+                            <p class="text-white text-center small px-2">Another exciting project in development</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="row2">
-            <div class="mockup img">
-                <img src="projectImg/mockup.PNG" alt="">
-            </div>
-            <div class="oogaBooga img">
-                <img src="projectImg/OogaBoogaJumper.png" alt="">
-            </div>
-            <div class="webCatalogus img">
-                <img src="projectImg/webcatalogus.PNG" alt="">
-            </div>
-        </div>
-        <div class="row3">
-            <div class="wordle img">
-                <img src="projectImg/wordle.PNG" alt="">
-            </div>
-            <div class="placeholder1 img">
-                <img src="projectImg/placeholder-256x256.png" alt="">
-            </div>
-            <div class="placeholder2 img">
-                <img src="projectImg/placeholder-256x256.png" alt="">
-            </div>
-        </div>
-    </section>
-
+    </div>
+    <style>
+        .project-grid {
+            transition: all 0.3s ease;
+        }
+        .project-item {
+            transition: all 0.3s ease;
+        }
+        .project-item:hover {
+            transform: scale(1.2);
+            z-index: 1;
+        }
+        .project-grid:hover .project-item:not(:hover) {
+            transform: scale(0.8);
+        }
+        .overlay {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .project-item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
 
 </body>
 
